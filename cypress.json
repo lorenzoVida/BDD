@@ -1,0 +1,7 @@
+{
+  "projectId": "93jqiy",
+  "reporter": "mochawesome",
+  "chromeWebSecurity": false,
+  "uncaught":"exception",
+  "testFiles": "**/*.feature"
+}
