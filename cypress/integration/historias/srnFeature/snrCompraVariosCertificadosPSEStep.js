@@ -2,39 +2,39 @@ import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 
 //const url = 'https://uat.v2.certificadotradicionylibertad.com/'
 Given('abrir la website de snr', () => {
-  cy.visit('https://uat.v2.certificadotradicionylibertad.com/')
+  cy.visit('c/')
   cy.wait(4000)
 })
 
 When('agrego varios certificados para su consulta', () => {
-  cy.get('#office-list').type('AGUA DE DIOS').type('{downarrow}{enter}')
+  cy.get('#office-list').type('xx').type('{downarrow}{enter}')
   cy.get('input[placeholder="Ingrese la matrícula"]').type('4565')
   cy.get('button[aria-label="Debes llenar los campos para realizar la consulta"]').click()
   cy.wait(10000)
   cy.get('.MuiButton-text').click()
   //ACACIAS BARICHARA
-  cy.get('#office-list').type('ACACIAS').type('{downarrow}{enter}')
+  cy.get('#office-list').type('xxx').type('{downarrow}{enter}')
   cy.get('input[placeholder="Ingrese la matrícula"]').type('4654')
   cy.get('button[aria-label="Debes llenar los campos para realizar la consulta"]').click()
   cy.wait(2000)
-  cy.get('#office-list').type('BARICHARA').type('{downarrow}{enter}')
+  cy.get('#office-list').type('xxx').type('{downarrow}{enter}')
   cy.get('input[placeholder="Ingrese la matrícula"]').type('4633')
   cy.get('button[aria-label="Debes llenar los campos para realizar la consulta"]').click()
   cy.wait(6000)
-  cy.get('#office-list').type('CARTAGO').type('{downarrow}{enter}')
+  cy.get('#office-list').type('xx').type('{downarrow}{enter}')
   cy.get('input[placeholder="Ingrese la matrícula"]').type('4333')
   cy.get('button[aria-label="Debes llenar los campos para realizar la consulta"]').click()
   ////repetidos
   cy.wait(10000)
-  cy.get('#office-list').type('AGUA DE DIOS').type('{downarrow}{enter}')
+  cy.get('#office-list').type('x x x').type('{downarrow}{enter}')
   cy.get('input[placeholder="Ingrese la matrícula"]').type('4512')
   cy.get('button[aria-label="Debes llenar los campos para realizar la consulta"]').click()
   //ACACIAS BARICHARA
-  cy.get('#office-list').type('ACACIAS').type('{downarrow}{enter}')
+  cy.get('#office-list').type('xxx').type('{downarrow}{enter}')
   cy.get('input[placeholder="Ingrese la matrícula"]').type('4698')
   cy.get('button[aria-label="Debes llenar los campos para realizar la consulta"]').click()
   cy.wait(6000)
-  cy.get('#office-list').type('BARICHARA').type('{downarrow}{enter}')
+  cy.get('#office-list').type('xx').type('{downarrow}{enter}')
   cy.get('input[placeholder="Ingrese la matrícula"]').type('4612')
   cy.get('button[aria-label="Debes llenar los campos para realizar la consulta"]').click()
   cy.wait(6000)
